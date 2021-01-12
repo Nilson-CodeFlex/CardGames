@@ -35,4 +35,8 @@ export class Card {
 
     }
 
+    numValue():number{
+        return 0;
+    }
+    
 }
