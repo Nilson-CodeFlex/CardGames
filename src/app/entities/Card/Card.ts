@@ -35,8 +35,19 @@ export class Card {
 
     }
 
-    numValue():number{
-        return 0;
+    numValue(): number {
+        let value = 0;
+        
+        if (this._Ion === "A") {
+            value = 1;
+        } else if (this._Ion === "J" || this._Ion === "Q" || this._Ion === "K") {
+            value = 10;
+
+        } else {
+            value = +this._Ion;
+        }
+
+        return value;
     }
-    
+
 }
