@@ -6,6 +6,8 @@ import { DeckComponent } from './Deck.component';
   imports: [
     CommonModule
   ],
-  declarations: [DeckComponent]
+  declarations: [DeckComponent],
+  exports: [DeckComponent]
+
 })
 export class DeckModule { }
