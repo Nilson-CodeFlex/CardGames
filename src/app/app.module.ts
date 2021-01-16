@@ -20,3 +20,4 @@ import { CardModule } from './entities/Card/Card.module'
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
