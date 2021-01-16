@@ -15,6 +15,9 @@ export class Card {
             else if (this._Ion === "K"){ 
                 return "King";
             }
+            else if(this._Ion === "A"){
+                return "Ace"
+            }
             else{
                 return "Queen";
             }

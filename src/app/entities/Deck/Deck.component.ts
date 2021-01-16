@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Card } from '../Card/Card';
-
+import { Deck } from './Deck'
 @Component({
   selector: 'app-Deck',
   templateUrl: './Deck.component.html',
@@ -10,12 +10,12 @@ export class DeckComponent implements OnInit {
 
   constructor() { }
 
-  cards:Array<Card> = [
-    new Card('10', 'S'),
-    new Card('J', 'H')
-  ];
+  deck:Deck;
 
   ngOnInit() {
+    this.deck = new Deck();
+    this.deck.addCard(new Card("10", "S"));
+    this.deck.addCard(new Card("A", "H"));
   }
 
 }

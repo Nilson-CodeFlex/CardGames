@@ -1,5 +1,9 @@
-<div class="col" *ngFor="let c of cards">
+<div class="col" *ngFor="let c of deck.cards">
 
   <p>{{ c.toString() }}</p>
 
+</div>
+<div class="col">
+  <p>{{deck.size()}}</p>
+  <p>{{deck.totalSum()}}</p>
 </div>

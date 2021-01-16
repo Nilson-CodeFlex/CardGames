@@ -2,7 +2,7 @@ import {Card} from '../card/card';
 
 export class Deck{
 
-    private _cards:Array<Card>;
+    private _cards:Array<Card> = [];
 
     private _hasAce:boolean;
 
@@ -11,7 +11,7 @@ export class Deck{
 
     addCard(card:Card){
         this._cards.push(card);
-        if(card.Ion === 'A'){
+        if(card.Ion === 'Ace'){
             this._hasAce = true;
         }
     }
@@ -22,7 +22,7 @@ export class Deck{
 
     totalSum():Array<number>{
         let minSum:number = 0;
-        let maxSum:number = 0;
+        let maxSum:number = 9999;
         this._cards.forEach(card =>
             minSum += card.numValue()
         );
@@ -30,5 +30,9 @@ export class Deck{
             maxSum = minSum + 10;
         }
         return [minSum, maxSum]; //minSum considering ace = 1 or no ace, maxSum considering ace = 11
+    }
+
+    get cards(){
+        return this._cards;
     }
 }
