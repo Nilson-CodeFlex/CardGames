@@ -1,0 +1,21 @@
+{
+    "response":[
+        {
+        "Ion":"1",
+        "figure":"S" 
+        },
+        {
+            "Ion":"2",
+            "figure":"S"
+        },
+        {
+            "Ion":"3",
+            "figure":"S"
+        },
+        {
+            "Ion":"J",
+            "figure":"S"
+        }
+        
+    ]
+}

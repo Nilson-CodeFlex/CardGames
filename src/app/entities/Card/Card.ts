@@ -3,7 +3,7 @@ export class Card {
     private _figure: String;//Diamonds, Hearts, 
 
     constructor(Ion: String, figure: String) {
-        this.Ion = Ion;
+        this._Ion = Ion;
         this._figure = figure;
     }
 

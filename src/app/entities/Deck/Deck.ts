@@ -16,6 +16,12 @@ export class Deck{
         }
     }
 
+    addCards(newCards:Array<Card>){
+        newCards.forEach(card => {
+            this.addCard(card);
+        });
+    }
+
     size():number{
         return this._cards.length;
     }
@@ -28,8 +34,11 @@ export class Deck{
         );
         if(this._hasAce){
             maxSum = minSum + 10;
+            return [minSum, maxSum]
+        }                               //minSum considering ace = 1 or no ace, maxSum considering ace = 11
+        else{
+            return [minSum]
         }
-        return [minSum, maxSum]; //minSum considering ace = 1 or no ace, maxSum considering ace = 11
     }
 
     get cards(){
