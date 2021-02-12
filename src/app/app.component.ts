@@ -1,5 +1,5 @@
 import { Component, TestabilityRegistry } from '@angular/core';
-import { Card } from './entities/Card/Card'
+import { Dealer } from './entities/Dealer'
 
 @Component({
   selector: 'app-root',
@@ -11,7 +11,7 @@ export class AppComponent
 {
  
   title = 'CardGames';
-  
+
 }
 
 

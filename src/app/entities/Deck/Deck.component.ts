@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Card } from '../Card/Card';
 import { Deck } from './Deck'
-import { Dealer } from '../Dealer';
+import { dealer } from '../Dealer';
 @Component({
   selector: 'app-Deck',
   templateUrl: './Deck.component.html',
@@ -15,7 +15,6 @@ export class DeckComponent implements OnInit {
 
   ngOnInit() {
     this.deck = new Deck();
-    let dealer = new Dealer()
     this.deck.addCards(dealer.giveCards(2));
   }
 

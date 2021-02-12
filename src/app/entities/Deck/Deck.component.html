@@ -1,10 +1,8 @@
-<div class="col">
-  <div class="row" *ngFor="let c of deck.cards">
-    <p>{{ c.toString() }}</p>
+<div class="row">
+  <div class="col" *ngFor="let c of deck.cards">
+    <img src="assets/{{c.toString()}}" alt="{{c.toString()}}" width="10%" height="10%">
   </div>
 </div>
-
-<button type="button" class="btn btn-warning">Warning</button>
 
 
 <div class="col">

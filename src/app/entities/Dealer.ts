@@ -4,7 +4,6 @@ import {Deck} from './Deck/Deck';
 export class Dealer {
 
     wholeDeck:Array<Card> = [
-        new Card("1", "S"),
         new Card("2", "S"),
         new Card("3", "S"),
         new Card("4", "S"),
@@ -18,7 +17,6 @@ export class Dealer {
         new Card("Q", "S"),
         new Card("K", "S"),
         new Card("A", "S"),
-        new Card("1", "C"),
         new Card("2", "C"),
         new Card("3", "C"),
         new Card("4", "C"),
@@ -32,7 +30,6 @@ export class Dealer {
         new Card("Q", "C"),
         new Card("K", "C"),
         new Card("A", "C"),
-        new Card("1", "H"),
         new Card("2", "H"),
         new Card("3", "H"),
         new Card("4", "H"),
@@ -46,7 +43,6 @@ export class Dealer {
         new Card("Q", "H"),
         new Card("K", "H"),
         new Card("A", "H"),
-        new Card("1", "D"),
         new Card("2", "D"),
         new Card("3", "D"),
         new Card("4", "D"),
@@ -81,4 +77,7 @@ export class Dealer {
         return returnMe;
     }
 
+
 }
+
+export const dealer = new Dealer();

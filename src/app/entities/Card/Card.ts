@@ -30,10 +30,10 @@ export class Card {
     }
 
     get Figure() {
-        if(this._figure === "S") return "spades"
-        else if( this._figure === "C") return "clubs"
-        else if(this._figure === "H") return "hearts"
-        else return "diamonds"
+        if(this._figure === "S") return "spades" //(♠)
+        else if( this._figure === "C") return "clubs" //(♣)
+        else if(this._figure === "H") return "hearts" //(♥)
+        else return "diamonds" //(♦)
     }
 
     set Figure(figure: String) {
@@ -67,7 +67,7 @@ export class Card {
 
 
     toString():string{
-        return  this.Ion + " of " + this.Figure;
+        return  this.Ion + "_of_" + this.Figure+".png";
     }
 
 }
