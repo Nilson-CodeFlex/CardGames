@@ -10,5 +10,5 @@
   <p>This deck has {{deck.size()}} cards!</p>
   <p>All of them add up to {{deck.totalSum().length == 1? deck.totalSum():deck.totalSum()[0] + " or " +deck.totalSum()[1]}}!</p>
 </div>
-
+<button type="button" class="btn btn-info" (click)=addCard() [disabled]=checkButton() >Another card?</button>
 </div>

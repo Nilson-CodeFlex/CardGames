@@ -13,6 +13,16 @@ export class DeckComponent implements OnInit {
 
   deck:Deck;
 
+  addCard(){
+    this.deck.addCards(dealer.giveCards(1));
+    console.log("Card added.")
+  }
+
+  checkButton():boolean{
+    let sum = this.deck.totalSum();
+    return sum[0]>=21
+  }
+
   ngOnInit() {
     this.deck = new Deck();
     this.deck.addCards(dealer.giveCards(2));
