@@ -1,11 +1,14 @@
-<div class="row">
-  <div class="col" *ngFor="let c of deck.cards">
-    <img src="assets/{{c.toString()}}" alt="{{c.toString()}}" width="10%" height="10%">
+<div class="container">
+<div class="row" id="cards">
+  <div class="col-sm" *ngFor="let c of deck.cards">
+    <img src="assets/{{c.toString()}}" alt="{{c.toString()}}" width="100px" height="150px">
   </div>
 </div>
 
 
 <div class="col">
-  <p>{{deck.size()}}</p>
-  <p>{{deck.totalSum()}}</p>
+  <p>This deck has {{deck.size()}} cards!</p>
+  <p>All of them add up to {{deck.totalSum().length == 1? deck.totalSum():deck.totalSum()[0] + " or " +deck.totalSum()[1]}}!</p>
+</div>
+
 </div>
